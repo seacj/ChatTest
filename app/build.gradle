@@ -43,4 +43,5 @@ dependencies {
     implementation 'com.android.support:design:24.2.1'
     implementation 'cn.leancloud.android:chatkit:1.0.6'
     implementation 'com.github.stuxuhai:jpinyin:1.0'
+    implementation 'com.android.support:design:23.+'
 }

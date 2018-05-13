@@ -26,7 +26,6 @@ public class BottomNavActivity extends FragmentActivity implements View.OnClickL
         setContentView(R.layout.activity_bottom_nav);
         initUI();
         initTab();
-
     }
 
 
