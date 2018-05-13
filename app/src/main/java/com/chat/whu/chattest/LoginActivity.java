@@ -68,7 +68,7 @@ public class LoginActivity extends Activity {
             boolean flag;
             @Override
             public void run() {
-                AVQuery<AVObject> avQuery = new AVQuery<>("exam");
+                AVQuery<AVObject> avQuery = new AVQuery<>("UserID");
                 avQuery.findInBackground(new FindCallback<AVObject>() {
                     @Override
                     public void done(List<AVObject> list, AVException e) {
@@ -80,7 +80,7 @@ public class LoginActivity extends Activity {
                         }
                         if (flag){
                             Toast.makeText(getApplicationContext(),"登陆成功！",Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                            startActivity(new Intent(LoginActivity.this,BottomNavActivity.class));
                             finish();
                         }else {
                             Toast.makeText(getApplicationContext(),"用户名或密码错误！",Toast.LENGTH_SHORT).show();

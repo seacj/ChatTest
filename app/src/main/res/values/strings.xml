@@ -6,5 +6,12 @@
     <string name="password">密码</string>
     <string name="confirmpassword">确认密码</string>
     <string name="chat_name">昵称</string>
+    <string name="chat">聊天</string>
+    <string name="book">通讯录</string>
+    <string name="set">设置</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>
