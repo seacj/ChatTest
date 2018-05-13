@@ -2,135 +2,136 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <!--<RelativeLayout-->
-        <!--android:id="@+id/rl_main"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent" >-->
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-        <!--&lt;!&ndash; 顶部 &ndash;&gt;-->
+        <!-- 顶部 -->
 
-        <!--<RelativeLayout-->
-            <!--android:id="@+id/top_tab"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="50dip"-->
-            <!--android:background="#000" >-->
+        <RelativeLayout
+            android:id="@+id/top_tab"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="#000" >
 
-            <!--<ImageView-->
-                <!--android:id="@+id/iv_logo"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_centerInParent="true"-->
-                <!--android:focusable="false"-->
-                <!--android:src="@drawable/icon_one"-->
-                <!--android:contentDescription="@null" />-->
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:focusable="false"
+                android:src="@drawable/icon_one"
+                android:contentDescription="@null" />
 
-        <!--</RelativeLayout>-->
+        </RelativeLayout>
 
-        <!--&lt;!&ndash; 底部tab &ndash;&gt;-->
+        <!-- 底部tab -->
 
-        <!--<LinearLayout-->
-            <!--android:id="@+id/ll_bottom_tab"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="54dp"-->
-            <!--android:layout_alignParentBottom="true"-->
-            <!--android:gravity="center_vertical"-->
-            <!--android:orientation="horizontal"-->
-            <!--android:baselineAligned="true">-->
+        <LinearLayout
+            android:id="@+id/ll_bottom_tab"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:baselineAligned="true">
 
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/rl_home"-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight="1.0" >-->
+            <RelativeLayout
+                android:id="@+id/rl_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
 
-                <!--<ImageView-->
-                    <!--android:id="@+id/iv_home"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:src="@drawable/index"-->
-                    <!--android:contentDescription="@null"/>-->
+                <ImageView
+                    android:id="@+id/iv_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/icon_one"
+                    android:contentDescription="@null"/>
 
-                <!--<TextView-->
-                    <!--android:id="@+id/tv_home"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@id/iv_home"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:text="@string/chat"-->
-                    <!--android:textColor="@color/bottomtab_normal"-->
-                    <!--android:textSize="12sp" />-->
-            <!--</RelativeLayout>-->
+                <TextView
+                    android:id="@+id/tv_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_home"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/chat"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+            </RelativeLayout>
 
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/rl_find"-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight="1.0" >-->
+            <RelativeLayout
+                android:id="@+id/rl_find"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
 
-                <!--<ImageView-->
-                    <!--android:id="@+id/iv_find"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:src="@drawable/nav_find"-->
-                    <!--android:contentDescription="@null" />-->
+                <ImageView
+                    android:id="@+id/iv_find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/icon_one" />
 
-                <!--<TextView-->
-                    <!--android:id="@+id/tv_find"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/iv_find"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:text="@string/bottom_tab_find"-->
-                    <!--android:textColor="@color/bottomtab_normal"-->
-                    <!--android:textSize="12sp" />-->
-            <!--</RelativeLayout>-->
+                <TextView
+                    android:id="@+id/tv_find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_find"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/book"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+            </RelativeLayout>
 
-            <!--<RelativeLayout-->
-                <!--android:id="@+id/rl_me"-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight="1.0" >-->
+            <RelativeLayout
+                android:id="@+id/rl_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
 
-                <!--<ImageView-->
-                    <!--android:id="@+id/iv_me"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:src="@drawable/nav_my"-->
-                    <!--android:contentDescription="@null" />-->
+                <ImageView
+                    android:id="@+id/iv_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/icon_three"
+                    android:contentDescription="@null" />
 
 
-                <!--<TextView-->
-                    <!--android:id="@+id/tv_me"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_below="@+id/iv_me"-->
-                    <!--android:layout_centerHorizontal="true"-->
-                    <!--android:text="@string/bottom_tab_my"-->
-                    <!--android:textColor="@color/bottomtab_normal"-->
-                    <!--android:textSize="12sp" />-->
-            <!--</RelativeLayout>-->
-        <!--</LinearLayout>-->
+                <TextView
+                    android:id="@+id/tv_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_me"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/set"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
 
-        <!--&lt;!&ndash; 内容部分， fragment切换 &ndash;&gt;-->
+        <!-- 内容部分， fragment切换 -->
 
-        <!--<LinearLayout-->
-            <!--android:id="@+id/content_layout"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_above="@+id/line"-->
-            <!--android:layout_below="@+id/top_tab"-->
-            <!--android:orientation="vertical" >-->
-        <!--</LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/line"
+            android:layout_below="@+id/top_tab"
+            android:orientation="vertical" >
+        </LinearLayout>
 
-        <!--<View-->
-            <!--android:id="@+id/line"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="1dp"-->
-            <!--android:layout_above="@id/ll_bottom_tab"-->
-            <!--android:background="@color/line" />-->
-    <!--</RelativeLayout>-->
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/ll_bottom_tab"
+            android:background="@color/line" />
+    </RelativeLayout>
 
 </FrameLayout>
