@@ -80,8 +80,18 @@ public class LoginActivity extends Activity {
                         }
                         if (flag){
                             Toast.makeText(getApplicationContext(),"登陆成功！",Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(LoginActivity.this,BottomNavActivity.class));
-                            finish();
+                            LCChatKit.getInstance().open(userId, new AVIMClientCallback() {
+                                @Override
+                                public void done(AVIMClient avimClient, AVIMException e) {
+                                    if (null == e) {
+                                        Intent intent = new Intent(LoginActivity.this, BottomNavActivity.class);
+                                        startActivity(intent);
+                                        finish();
+                                    } else {
+                                        Toast.makeText(LoginActivity.this, e.toString(), Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            });
                         }else {
                             Toast.makeText(getApplicationContext(),"用户名或密码错误！",Toast.LENGTH_SHORT).show();
                         }
