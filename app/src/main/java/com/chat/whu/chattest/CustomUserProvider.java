@@ -19,7 +19,7 @@ public class CustomUserProvider implements LCChatProfileProvider {
         return customUserProvider;
     }
 
-    private CustomUserProvider() {
+    CustomUserProvider() {
     }
 
     private static List<LCChatKitUser> partUsers = new ArrayList<LCChatKitUser>();
