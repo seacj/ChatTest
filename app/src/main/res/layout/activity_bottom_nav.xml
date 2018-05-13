@@ -13,16 +13,16 @@
             android:id="@+id/top_tab"
             android:layout_width="match_parent"
             android:layout_height="50dip"
-            android:background="#000" >
+            android:background="#eee" >
 
-            <ImageView
-                android:id="@+id/iv_logo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:focusable="false"
-                android:src="@drawable/icon_one"
-                android:contentDescription="@null" />
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_logo"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:focusable="false"-->
+                <!--android:src="@drawable/icon_one"-->
+                <!--android:contentDescription="@null" />-->
 
         </RelativeLayout>
 
@@ -35,7 +35,8 @@
             android:layout_alignParentBottom="true"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:baselineAligned="true">
+            android:baselineAligned="true"
+            android:background="#eee">
 
             <RelativeLayout
                 android:id="@+id/rl_home"
@@ -46,9 +47,9 @@
                 <ImageView
                     android:id="@+id/iv_home"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/icon_one"
+                    android:src="@drawable/message"
                     android:contentDescription="@null"/>
 
                 <TextView
@@ -58,8 +59,8 @@
                     android:layout_below="@id/iv_home"
                     android:layout_centerHorizontal="true"
                     android:text="@string/chat"
-                    android:textColor="@color/grey"
-                    android:textSize="12sp" />
+                    android:textColor="#000"
+                    android:textSize="14sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -71,11 +72,10 @@
                 <ImageView
                     android:id="@+id/iv_find"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentTop="true"
-                    android:contentDescription="@null"
-                    android:src="@drawable/icon_one" />
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/person"
+                    android:contentDescription="@null"/>
 
                 <TextView
                     android:id="@+id/tv_find"
@@ -84,8 +84,8 @@
                     android:layout_below="@+id/iv_find"
                     android:layout_centerHorizontal="true"
                     android:text="@string/book"
-                    android:textColor="@color/grey"
-                    android:textSize="12sp" />
+                    android:textColor="#000"
+                    android:textSize="14sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -97,9 +97,9 @@
                 <ImageView
                     android:id="@+id/iv_me"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/icon_three"
+                    android:src="@drawable/setting"
                     android:contentDescription="@null" />
 
 
@@ -110,8 +110,8 @@
                     android:layout_below="@+id/iv_me"
                     android:layout_centerHorizontal="true"
                     android:text="@string/set"
-                    android:textColor="@color/grey"
-                    android:textSize="12sp" />
+                    android:textColor="#000"
+                    android:textSize="14sp" />
             </RelativeLayout>
         </LinearLayout>
 
